@@ -8,7 +8,8 @@ az account list
 
 ### リソースグループの追加
 ```sh
-az acr create     --resource-group container-sample     --name resistrysample     --sku basic     --admin-enabled true
+az acr create     --resource-group <resourseGroupyName>   --name resistrysample     --sku basic     --admin-enabled true
+az acr login --name <azureContainerRegistryName>
 ```
 
 ### ログインサーバの取得

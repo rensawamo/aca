@@ -6,7 +6,7 @@ az account list
  az account set -s YOURID
 ```
 
-### リソースグループの追加
+### リソースグループの追加と aca login
 ```sh
 az acr create     --resource-group <resourseGroupyName>   --name resistrysample     --sku basic     --admin-enabled true
 az acr login --name <azureContainerRegistryName>
@@ -17,7 +17,7 @@ az acr login --name <azureContainerRegistryName>
 az acr list --resource-group container-sample  --query "[]
 .{acrLoginServer:loginServer}" --output table
 ```
-```
+
 // 出力
 ```sh
 AcrLoginServer
